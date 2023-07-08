@@ -10,7 +10,7 @@ let provider
 if (config.PROJECT_SETTINGS.isLocal) {
   provider = new hre.ethers.providers.WebSocketProvider(`ws://127.0.0.1:8545/`)
 } else {
-  provider = new hre.ethers.providers.WebSocketProvider(`wss://eth-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`)
+  provider = new hre.ethers.providers.WebSocketProvider(`wss://polygon-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`)
 }
 
 // -- SETUP UNISWAP/SUSHISWAP CONTRACTS -- //
